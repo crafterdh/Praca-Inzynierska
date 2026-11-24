@@ -1,0 +1,13 @@
+---
+maszyny-ubuntu:
+  hosts:
+    Ubuntu_serwer_1:
+      ansible_host: 16.171.224.14
+    Ubuntu_serwer_2:
+      ansible_host: 13.63.154.111
+    Ubuntu_serwer_3:
+      ansible_host: 13.48.29.215
+vars:
+  ansible_become: yes
+  ansible_become_method: sudo
+  ansible_become_pass: '{{ servers_sudo_pass }}'
